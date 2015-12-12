@@ -5,11 +5,22 @@
     <title></title>
     <style>
       .btn {
-        background: green;
+        background: blue;
+        color: white;
       }
 
       .btn:hover {
-        background: #bada55;
+        background: darkblue;
+      }
+
+      @media screen and (min-width: 600px) {
+        .btn {
+          background: green;
+        }
+
+        .btn:hover {
+          background: darkgreen;
+        }
       }
     </style>
   </head>
