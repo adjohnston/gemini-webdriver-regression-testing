@@ -1,7 +1,53 @@
 rootUrl: http://localhost:8000
 gridUrl: http://127.0.0.1:4444/wd/hub
 tolerance: 1
+screenshotsDir: './screens'
+strictComparison: true
+calibrate: false
+
+desiredCapabilities:
+  platform: MAC
+
+system:
+    parallelLimit: 1
+
 browsers:
-  chrome:
-    desiredCapabilities:
-      browserName: chrome
+    chrome-small:
+        desiredCapabilities:
+            browserName: chrome
+        windowSize: 320x480
+
+    chrome-medium:
+        desiredCapabilities:
+            browserName: chrome
+        windowSize: 641x1024
+
+    chrome-large:
+        desiredCapabilities:
+            browserName: chrome
+        windowSize: 1025x1024
+
+    chrome-xlarge:
+        desiredCapabilities:
+            browserName: chrome
+        windowSize: 1441x1024
+
+    firefox-small:
+        desiredCapabilities:
+            browserName: firefox
+        windowSize: 320x480
+
+    firefox-medium:
+        desiredCapabilities:
+            browserName: firefox
+        windowSize: 641x1024
+
+    firefox-large:
+        desiredCapabilities:
+            browserName: firefox
+        windowSize: 1025x1024
+
+    firefox-xlarge:
+        desiredCapabilities:
+            browserName: firefox
+        windowSize: 1441x1024
