@@ -7,7 +7,7 @@
     "webdriver-start": "./node_modules/.bin/webdriver-manager start",
     "html-report": "./node_modules/.bin/http-server ./gemini-report/",
     "gather-screens": "./node_modules/.bin/gemini gather ./tests/",
-    "test-screens": "./node_modules/.bin/gemini test --reporter html --reporter flat ./tests/ || true"
+    "test-screens": "./node_modules/.bin/gemini test --reporter html --reporter flat ./tests/ || exit 0"
   },
   "devDependencies": {
     "gemini": "^1.1.6",
