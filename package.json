@@ -1,0 +1,17 @@
+{
+  "name": "gemini-test",
+  "description": "Visual regression using Gemini",
+  "version": "0.0.1",
+  "scripts": {
+    "webdriver-install": "./node_modules/.bin/webdriver-manager update --standalone",
+    "webdriver-start": "./node_modules/.bin/webdriver-manager start",
+    "html-report": "./node_modules/.bin/http-server ./gemini-report/",
+    "gather-screens": "./node_modules/.bin/gemini gather ./tests/",
+    "test-screens": "./node_modules/.bin/gemini test --reporter html --reporter flat ./tests/"
+  },
+  "devDependencies": {
+    "gemini": "^1.1.6",
+    "http-server": "^0.8.5",
+    "webdriver-manager": "^7.0.1"
+  }
+}
