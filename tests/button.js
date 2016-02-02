@@ -8,8 +8,8 @@ gemini.suite('buttons', function (buttons) {
     .setUrl('/')
     .setCaptureElements(className);
 
-  gemini.suite('buttonSmall', (buttonNormal) => {
-    buttonNormal
+  gemini.suite('buttonSmall', (buttonSmall) => {
+    buttonSmall
       .before((actions) => {
         actions.setWindowSize(
           config.viewports.small.width,
@@ -22,8 +22,8 @@ gemini.suite('buttons', function (buttons) {
       });
   });
 
-  gemini.suite('buttonMedium', (buttonNormal) => {
-    buttonNormal
+  gemini.suite('buttonMedium', (buttonMedium) => {
+    buttonMedium
       .before((actions) => {
         actions.setWindowSize(
           config.viewports.medium.width,
@@ -36,8 +36,8 @@ gemini.suite('buttons', function (buttons) {
       });
   });
 
-  gemini.suite('buttonLarge', (buttonNormal) => {
-    buttonNormal
+  gemini.suite('buttonLarge', (buttonLarge) => {
+    buttonLarge
       .before((actions) => {
         actions.setWindowSize(
           config.viewports.large.width,
