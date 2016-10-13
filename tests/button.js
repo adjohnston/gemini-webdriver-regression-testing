@@ -1,4 +1,3 @@
-const gemini = require('gemini');
 const config = require('../config.js');
 
 const className = '.btn';
