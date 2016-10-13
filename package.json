@@ -4,10 +4,10 @@
   "version": "1.0.1",
   "scripts": {
     "webdriver-install": "./node_modules/.bin/webdriver-manager update --standalone",
-    "webdriver-start": "./node_modules/.bin/webdriver-manager start",
-    "html-report": "./node_modules/.bin/http-server ./gemini-report/",
-    "gather-screens": "./node_modules/.bin/gemini gather ./tests/",
-    "test-screens": "./node_modules/.bin/gemini test --reporter html --reporter flat ./tests/ || exit 0"
+    "webdriver-start": "npm run webdriver-install && ./node_modules/.bin/webdriver-manager start",
+    "gemini-report": "./node_modules/.bin/http-server ./gemini-report/",
+    "gemini-gather": "./node_modules/.bin/gemini update ./tests/",
+    "gemini-test": "./node_modules/.bin/gemini test --reporter html --reporter flat ./tests/ || exit 0"
   },
   "devDependencies": {
     "gemini": "^4.12.2",
